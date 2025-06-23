@@ -7,15 +7,17 @@ import Cart from "./Pages/Cart";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
-    </>
+ 
+      <div style={{ overflowX: "hidden" }}>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
+
   );
 };
 
